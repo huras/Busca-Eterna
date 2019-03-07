@@ -1,0 +1,3 @@
+zip -r compressed_filename.zip foldername
+
+mv /path/to/source /path/to/dest
