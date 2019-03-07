@@ -1,0 +1,20 @@
+const data = umArrayQualquer.sort(function(x,y){
+	    // test to determine if x e somehow smaller than y
+            if (x['name'] < y['name']) {
+                return -1;
+            }
+	    // test to determine if x e somehow bigger than y
+            if (x['name'] > y['name']) {
+                return 1;
+            }
+            // x must be equal to y
+            return 0;
+        })
+
+
+var a = 'amem';
+var b = 'banana';
+
+b é > que a
+se vc escrever a > b, vai receber false.
+se vc escrever b > a, vai receber true.

@@ -1,0 +1,3 @@
+=========[ Local onde as funções estranhas do vue ficam ]=========
+
+/resources/js/store/modules/algum.js
