@@ -1,0 +1,18 @@
+Dois seletores em um só grupo de propriedades
+
+.filtros input, .filtros select{    
+    border-radius: 0px;
+    height: 40px;
+}
+
+========================================
+
+Barra de rolagem vertical
+
+.inovation-div #add-point{
+    font-family: 'Open Sans';
+    font-size:14px;
+    color:rgb(129,129,129);
+    font-weight: normal;
+    overflow-y: scroll;
+}
