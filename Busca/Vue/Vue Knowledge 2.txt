@@ -1,0 +1,4 @@
+//Foreach no vue
+<span :key="p_index" v-for="(people, p_index) in people.categories"> {{people.label}}  </span>
+
+p_index, é só uma variavel criada na hora do uso mesmo, não tem que declarar em nenhum lugar
