@@ -1,0 +1,3 @@
+* = Ignora todos os arquivos
+Busca/* = Ignora todos os arquivos dentro de busca
+!Busca/ = Não ignora os arquivos dentro de busca
