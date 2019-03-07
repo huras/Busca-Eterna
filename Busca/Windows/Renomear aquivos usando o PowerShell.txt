@@ -1,0 +1,3 @@
+- Shift + Right Click on the window 
+- Click in Abrir Janela do PowerShell aqui
+- ren ./[current name].ext ./[new name].ext
