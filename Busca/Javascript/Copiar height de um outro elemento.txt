@@ -1,0 +1,7 @@
+$(document).ready(function(){
+	var blog_imgs_count = <?= count($publicacoes) ?>;
+        for(var i = 0; i < blog_imgs_count; i++){
+            var imgHeight = document.getElementsByClassName("blog-img-"+i)[0].style.height;
+            document.getElementsByClassName("blog-img-overlay-"+i)[0].style.height = imgHeight;
+        }
+});

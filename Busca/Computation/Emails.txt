@@ -1,0 +1,11 @@
+========= [Unknown related Topics] =========
+- Servidor de e-mail
+- Reputação de endereço IP
+- Devoluções
+- Reclamações
+
+
+
+========= [Authentication] =========
+
+* DKIM (DomainKeys Identified Mail) is an email authentication technique that allows the receiver to check that an email was indeed sent and authorized by the owner of that domain.

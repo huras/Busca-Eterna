@@ -1,0 +1,24 @@
+=== Criando elemento por tipo ===
+
+myNewElement = document.createElement('input');
+
+=== Setar a classe de um elemento ===
+
+myNewElement = document.createElement('div');
+myNewElement.className = 'nome-da-classe';
+
+=== Apendar um elemento dentro de outro ===
+
+myNewElement = document.createElement('input');
+myContainer = document.createElement('div');
+myContainer.appendChild(myNewElement);
+
+=== Setando/Alterando algum tributo do element ===
+
+myCheckbox = document.createElement('input');
+myCheckbox.setAttribute('type', 'checkbox');
+
+=== Setando/Alterando o conteúdo HTML interno ===
+
+mySpan = document.createElement('span');
+mySpan.innerHTML = 'Não exibir mais o tutorial';
