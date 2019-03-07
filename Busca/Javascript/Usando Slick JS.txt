@@ -1,0 +1,22 @@
+\/ === RESPONSIVIDADE ==================================================== \/
+
+O responsive do slick js, funciona da maior resolução para a menor.
+
+$('.classe-do-slick').slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	dots: false,
+	arrows: false,
+	responsive: [{
+		breakpoint: 1023,
+		settings: {	
+			slidesToShow: 3,
+		}
+	}]
+});
+
+Isso quer dizer que em telas com resolução iguais ou menor que 1023, exibirão apenas 3 slides. Em outras palavras isso afetará as resoluções (768px, 425px, 375px e 320px).
+
+Se eu quisesse só as resoluções abaixo ou igual a 425px, eu deveria então colocar o breakpoint como 767px. Que é a próxima resolução na hierarquia só que um pixel abaixo.
+
+============================================================================
