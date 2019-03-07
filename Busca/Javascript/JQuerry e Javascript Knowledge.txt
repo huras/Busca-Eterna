@@ -1,0 +1,145 @@
+Criar função que vai executar assim que a página e seus componentes carregarem
+
+$(document).ready(function() {
+}
+
+================================================================================================
+
+
+Scrollar barra vertical da página
+
+$(document).scrollTop(alturaAPartirDoTopo); 
+
+================================================================================================
+
+Mostrar e Esconder Elementos
+
+$('#columnistform').show();
+$('#columnistform').hide();
+
+================================================================================================
+
+Set the disabled attribute.
+
+$("input").attr('disabled','disabled');
+
+================================================================================================
+
+To enable again, the proper method is to use .removeAttr()
+
+$("input").removeAttr('disabled');
+
+================================================================================================
+
+Checar se um elemento está visivel
+
+$(element).is(":visible"); 
+
+================================================================================================
+
+Encontrar todos os elementos não visíveis
+
+$('element:hidden')
+
+================================================================================================
+
+Set the value of an input
+
+document.getElementById('element3224').value='text to be displayed' ; 
+
+================================================================================================
+
+Escrever no console
+
+console.log("Hello world!");
+
+================================================================================================
+
+Obter o valor de uma propriedade
+
+var x = document.getElementsByTagName("H1")[0].getAttribute("class");
+
+================================================================================================
+
+Obter a altura de um elemento
+
+var height = document.querySelector('.height_source').clientHeight;
+
+================================================================================================
+
+Get and element inside another element
+
+var targetDiv = document.getElementById("foo").getElementsByClassName("bar")[0];
+
+================================================================================================
+
+Javascript + php
+
+<?php 
+	$htmlString = 'quem sabe';
+?>
+<script type="text/javascript">
+	// notice the quotes around the ?php tag
+	var htmlString='<?php echo $htmlString; ?>';
+	alert(htmlString);
+</script>
+
+================================================================================================
+
+Javascript For Loop
+
+var divs = document.querySelectorAll('div'), i;
+
+for (i = 0; i < divs.length; ++i) {
+  divs[i].style.color = "green";
+}
+
+================================================================================================
+
+ADICIONAR E REMOVER COISAS NO STYLE DE UM ELEMENTO
+
+function color( choices ){
+
+    var color_type = choices.options[ choices.selectedIndex ].value;
+
+    if ( color_type == 'blue' ){
+        document.getElementById('blue').style.display = 'block';
+        document.getElementById('red').style.display = 'none';
+    } 
+    else{
+        document.getElementById('blue').style.display = 'none';
+        document.getElementById('red').style.display = 'block';
+    }
+}
+
+================================================================================================
+
+AJAX GG
+
+<script>
+	$(function(){
+		$('#cep').on('change', function(){
+    	cep = $(this).val();
+
+    	$.ajax({
+    		url        : '<?php echo $this->Html->url(array('controller' => 'clientes', 'action' => 'consulta_cep', 'plugin' => false, 'admin' => false)); ?>/'+ cep + ".json"
+    		,type       : 'get'
+    		,dataType   : 'json'
+
+    		,success: function(e){
+
+    			if(e.response.success){
+    				$('.logradouro').val(e.response.endereco.logradouro);
+    				$('.bairro').val(e.response.endereco.bairro);
+    				$('.cidade').val(e.response.endereco.cidade);
+    				$(".estado option[value="+e.response.endereco.sigla+"]").attr("selected","selected");
+    				$('.numero').focus();
+    			}else{
+    				alert("Não foi encontrado registro para o CEP")
+    			}
+    		}
+    	});
+    });
+	})
+</script>
+
