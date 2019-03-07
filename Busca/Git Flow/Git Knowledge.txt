@@ -1,0 +1,5 @@
+Set origin of a folder
+
+git remote -v
+git remote rm origin
+git remote add origin https://niobio41@bitbucket.org/criasol/ovovo.git
