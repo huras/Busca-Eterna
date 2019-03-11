@@ -1,0 +1,46 @@
+[6]============ Ouvir e executar quando eventos ocorrerem ============[9]
+
+@nome_evento="[qqr script ou chamada de função]"
+@nome_evento="$emit('close')"
+
+[6]============ Função Anônima ============[9]
+
+() => {nome_funcao(params)}
+
+[6]============ Validação usando o vuelidate ============[9]
+
+validations () {
+    const valid = {
+      data: {
+        name: {
+          required
+        },
+        content: {
+          required
+        }
+      }
+    }
+
+    if (this.step === 2) {
+      valid.data['content'] = {
+        required
+      }
+      valid.data['subject'] = {
+        required
+      }
+    }
+
+    return valid
+  },
+
+Usar tbm :
+
+<div class="group-1">
+	<div class="text" style="width: 100%">
+		  <label for="">Assunto</label>
+		  <input :class="{'input-error' : $v.data.subject && !$v.data.subject.required && $v.data.subject.$dirty}" @input="$v.data.subject && $v.data.subject.$touch" v-model="data.subject" type="text" :maxLength="45">
+		  <div v-bind:class="[$v.data.subject && !$v.data.subject.required && $v.data.subject.$dirty ? 'error' : 'required-message']">
+			    Campo obrigatório.
+		  </div>
+	</div>
+</div>

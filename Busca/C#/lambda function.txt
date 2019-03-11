@@ -1,0 +1,24 @@
+Dictionary<int, object[]> dict = dados.ToDictionary(
+                (item) => item.ID,
+                (item) => {
+                    // Formula para juros compostos: C * (1 + i) ^ t. C = Valor inicial, i = Taxa de Juros, t = Periodo
+                    decimal juros = (item.Valor * Convert.ToDecimal(Math.Pow(1 + 0.0024, (item.DataPagamento.GetValueOrDefault(DateTime.Today) - item.DataVencimento).TotalDays)) - item.Valor);
+                    decimal desconto = ((item.Desconto != null && item.Desconto != "") ? Convert.ToDecimal(item.Desconto) : 0);
+
+                    return new object[] {
+                        item.Sis_Empresa.IDEmpresa,
+                        item.Sis_Empresa.RazaoSocial,
+                        item.Sis_Empresa.Empresa,
+                        item.Valor,
+                        juros.ToString("N2"),
+                        desconto,
+                        (item.Valor + juros - desconto).ToString("N2"),
+                        item.Sis_Empresa.CNPJ ?? "",
+                        item.DataReferencia.ToShortDateString(),
+                        item.DataVencimento.ToShortDateString(),
+                        (item.DataPagamento.GetValueOrDefault(DateTime.Today) - item.DataVencimento).TotalDays,
+                        item.Sis_MetodoPagamento.Fin_FormaPagamento.Nome,
+                        item.Sis_Empresa.Email,
+                        item.Sis_Empresa.Telefone1
+                    };
+                });
