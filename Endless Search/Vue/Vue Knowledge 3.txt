@@ -1,3 +1,18 @@
+[6]======================================[9]
+[6]============ Basic skills ============[9]
+[6]======================================[9]
+
+v-show :
+
+v-if :
+v-else :
+
+v-for :
+
+@click :
+@click.native :
+
+
 [6]============ Ouvir e executar quando eventos ocorrerem ============[9]
 
 @nome_evento="[qqr script ou chamada de função]"
@@ -44,3 +59,43 @@ Usar tbm :
 		  </div>
 	</div>
 </div>
+
+[6]=========================================[9]
+[6]============ Defaul Vue file ============[9]
+[6]=========================================[9]
+
+<style lang="scss" scoped>
+</style>
+
+<template>
+</template>
+
+<script>
+</script>
+
+[6]=====================================================[9]
+[6]============ Linkar input à uma variável ============[9]
+[6]=====================================================[9]
+
+A propriedade de um v-model de um componente vue determina em que variável declarada no "data () {}" os valores recebidos pelo componente irão ser armazenados.
+
+
+[6]========================================[9]
+[6]============ Foreach no vue ============[9]
+[6]========================================[9]
+
+<span :key="p_index" v-for="(people, p_index) in people.categories"> {{people.label}}  </span>
+p_index, é só uma variavel criada na hora do uso mesmo, não tem que declarar em nenhum lugar
+
+[6]==============================[9]
+[6]============ Tips ============[9]
+[6]==============================[9]
+
+O slot das coisas é importante. As paradas devem ser colocadas lá dentro.
+
+
+
+
+
+
+

@@ -1,3 +1,15 @@
+=== Create Zip Archive File in Linux ===
+
 zip -r compressed_filename.zip foldername
 
+=== Move file ===
+
 mv /path/to/source /path/to/dest
+
+=== Extract Zip File to Specific or Different Directory ===
+
+unzip tecmint_files.zip .
+
+=== Zip everything in the current directory ===
+
+zip -r compressed_filename.zip .
