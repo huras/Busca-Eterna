@@ -1,0 +1,5 @@
+=== Alter table ===
+
+Schema::table('evento_agenda', function(Blueprint $table){
+
+$table->string('descricao', 512)->change();

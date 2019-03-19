@@ -1,0 +1,25 @@
+Publicar site
+
+* Adicionar novos usuários na tabela de senhas
+- Criar Host com novo usuário
+	No dream host em Domains->Manage Domains->Add Hosting to a Domain / Sub-Domain	
+- Criar Banco com novo usuário
+	No dream host em Advanced-> Databases
+- Clonar o projeo para o Host
+	Lembrar de clonar a Master!
+	Set up an SSH key
+		A chave é o .pub que fica em .ssh/
+	Bitbucket -> Repositório do projeto -> (Barra letral esquerda) Settings -> Access keys -> Add key -> 
+		Label: publicado
+		Key: gerada com ~
+- Instalar o composer como sendo irmão da blabla.com.br/
+	composer install	
+		Dentro de blabla.com.br/ dê um [../composer.phar install]
+	composer update
+- Rodar os comandos artisan
+	Storage:link
+	Key:generate
+- Instalar o nvm
+- Instalar uma versão atualizada do npm
+- Executar 'npm install'
+- Executar 'npm run prod'

@@ -1,0 +1,11 @@
+=== Tarefa de publicação ===
+
+Mover para fazer
+Marcar no card quem vai homologar no publicado
+Marcar como 'Publicar' (mesmo você já tendo publicado)
+
+=== Volta - Produção > Comercial ===
+
+Comenta !volta e junto marque o motivo da volta
+Marque quem tem que resolver sua volta
+E aplique a etiqueta "Impedimento" no card

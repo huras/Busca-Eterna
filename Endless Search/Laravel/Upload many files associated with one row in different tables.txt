@@ -1,0 +1,53 @@
+O form tem que ter o enctype='multipart/form-data'
+
+o type do input tem que ser file
+name do input tem que terminar em '[]'
+
+===============================
+
+
+=> Em app/helpers.php coloque a função
+
+if (! function_exists('upload')) {
+
+    function upload($path, $file, $filename = null) {
+
+        if ($file) {
+            $fullPath = "{$path}{$filename}.{$file->getClientOriginalExtension()}";
+
+            if (!$filename) {
+                $filename = basename($file->getClientOriginalName(), '.'.$file->getClientOriginalExtension());
+                $filename_counter = 1;
+
+                while (Storage::disk('public')->exists($path.$filename.'.'.$file->getClientOriginalExtension())) {
+
+                    $filename = basename($file->getClientOriginalName(), '.'.$file->getClientOriginalExtension()).(string) ($filename_counter++);
+                }
+
+                $fullPath = $path.$filename.'.'.$file->getClientOriginalExtension();
+            } 
+
+            Storage::disk('public')->put($fullPath, file_get_contents($file), 'public');
+
+            return $fullPath;
+        }
+
+    }
+
+}
+
+
+========================================================
+
+    $associado = Associese::create($request->all());
+            
+
+    $fullPath = [];
+    foreach ($request->arquivos as $a) {
+    	$newPath = upload('teste/', $a);
+    	$fullPath[] = $newPath;
+
+        $associadoFile = ['associese_id' => $associado->id, 'file_name' => $newPath];
+        Associese::create($associadoFile);
+    }
+

@@ -1,0 +1,10 @@
+Lista tudo
+ls
+
+Lista em formato de lista
+ls -l
+
+Lista e exibe arquivos ocultos
+ls -a
+
+dá pra combinar vários parametros tipo em: ls -la

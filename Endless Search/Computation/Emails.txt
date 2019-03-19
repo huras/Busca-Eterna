@@ -9,3 +9,12 @@
 ========= [Authentication] =========
 
 * DKIM (DomainKeys Identified Mail) is an email authentication technique that allows the receiver to check that an email was indeed sent and authorized by the owner of that domain.
+
+SSL/TLS - É um tipo de autenticação, já em um .env do laravel tipo abaixo:
+MAIL_DRIVER=smtp
+MAIL_HOST=ssl://smtp.gremig.com.br
+MAIL_PORT=465
+MAIL_USERNAME=atendimento@gremig.com.br
+MAIL_PASSWORD=aT3nde#1819
+MAIL_ENCRYPTION=null
+MAIL_TO=henriquepalote@criasol.com.br
