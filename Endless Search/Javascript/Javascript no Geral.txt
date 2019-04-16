@@ -23,3 +23,26 @@ onclick="somarTudo()"
 
 Scripts placed in the <head> slows down the render, because the scripts are being compiled.
 Scripts can also be placed in external files.
+
+=== Output ===
+JavaScript can output data in different ways:
+
+- Writing into an HTML element
+- Writing into an alert box
+- Writing into the console
+
+=== Alert Box ===
+- You can use an alert box to display data
+window.alert('laranja vale '+preco+' reais.')
+
+=== Console ===
+- For debugging purposes, you can use the console.log() method to display data
+
+=== Array igual no PHP ===
+reasons:
+{
+  '421': 'Serviço não disponível, o canal de transmissão será fechado',
+  '450': 'Ação de correio requisitada não tomada: caixa de email indisponível (ex: caixa de email ocupada)'
+}
+
+(resons['421'] == 'Serviço não disponível, o canal de transmissão será fechado') = true

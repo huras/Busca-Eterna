@@ -1,8 +1,0 @@
-============ Flex grid hierarchy ============
-
-Container
-  Row
-    Col
-      Div com o conteúdo de fato
-
-- Use rows para pensar

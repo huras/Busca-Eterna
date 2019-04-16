@@ -1,0 +1,1 @@
+Ctrl + Enter = quebrar linha (ao invés de : End > Enter ) (O shift inverte a direção)

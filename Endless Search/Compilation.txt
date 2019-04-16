@@ -1,0 +1,15 @@
+- MySQL -
+tinyint
+int
+varchar
+text
+
+not null
+unsigned
+auto increment
+primary key
+table
+
+create table
+alter table
+change

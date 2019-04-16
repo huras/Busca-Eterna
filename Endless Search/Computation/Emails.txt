@@ -4,7 +4,8 @@
 - Devoluções
 - Reclamações
 
-
+=== [Resources] ===
+https://docs.microsoft.com/pt-br/exchange/mail-flow/test-smtp-with-telnet?view=exchserver-2019
 
 ========= [Authentication] =========
 
@@ -14,7 +15,7 @@ SSL/TLS - É um tipo de autenticação, já em um .env do laravel tipo abaixo:
 MAIL_DRIVER=smtp
 MAIL_HOST=ssl://smtp.gremig.com.br
 MAIL_PORT=465
-MAIL_USERNAME=atendimento@gremig.com.br
-MAIL_PASSWORD=aT3nde#1819
+MAIL_USERNAME=lala@mail.com
+MAIL_PASSWORD=xueus
 MAIL_ENCRYPTION=null
 MAIL_TO=henriquepalote@criasol.com.br

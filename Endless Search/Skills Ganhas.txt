@@ -1,0 +1,13 @@
+Laramonger - 4 Skills
+
+/*
+|--------------------------------------------------------------------------
+| 12/Abril/2019
+|--------------------------------------------------------------------------
+|
+| Laravel - Backend Validation
+| Laravel - Conditional Validation
+| Laravel - Validation Messages Exibition on View
+| Laravel - Simple Email Sending via Gmail
+|
+*/
