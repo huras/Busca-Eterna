@@ -13,3 +13,6 @@ table
 create table
 alter table
 change
+
+Function-scoped
+Block-scoped

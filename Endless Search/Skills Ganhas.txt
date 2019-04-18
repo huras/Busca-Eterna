@@ -1,4 +1,6 @@
 Laramonger - 4 Skills
+PHP Lancer - 1 Skills
+Cake Mage - 1 Skills
 
 /*
 |--------------------------------------------------------------------------
@@ -9,5 +11,15 @@ Laramonger - 4 Skills
 | Laravel - Conditional Validation
 | Laravel - Validation Messages Exibition on View
 | Laravel - Simple Email Sending via Gmail
+|
+*/
+
+/*
+|--------------------------------------------------------------------------
+| 18/Abril/2019
+|--------------------------------------------------------------------------
+|
+| PHP - Upload Max Size Alteration
+| Cakephp 2.x - File Upload Max Size Alteration
 |
 */
